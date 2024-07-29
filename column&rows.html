@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column & rows</title>
+    <style>
+        .container {
+            width: 50%;
+            height: 50vh;
+            margin: 100px auto;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 200px 100px;
+
+            /* Digunkan untuk menentukan ukuran kolom yg tidak terdefinisikan pada grid-template-columns/rows */
+            grid-auto-columns: 40px;
+
+            /* Digunakan untuk mengatur struktur sisa cell pada grid */
+            grid-auto-flow: column;
+        }
+
+        .Satu {
+            background-color: silver;
+        }
+
+        .Dua {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Satu">1</div>
+        <div class="Dua">2</div>
+        <div class="Satu">3</div>
+        <div class="Dua">4</div>
+        <div class="Satu">5</div>
+        <div class="Dua">6</div>
+        <div class="Satu">7</div>
+        <div class="Dua">8</div>
+        <div class="Satu">9</div>
+    </div>
+</body>
+
+</html>
